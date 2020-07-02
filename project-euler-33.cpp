@@ -23,7 +23,10 @@ using namespace std;
 #define pss pair<string,string>
 #define all(v) v.begin(),v.end()
 #define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
-
+/*
+This code is used for showing all the possibile combinations of  digit numbers that seem to satisfy the condition specified in the question.
+Out the specified combinations you should find the four suitable ones manually and then compute the answer as specified in the question
+*/
 int main() 
 {
 	ios_base::sync_with_stdio(0);
@@ -40,21 +43,6 @@ int main()
 				if(10*i+c<10*c+j)
 				{
 					cout<<10*i+c<<" "<<10*c+j<<endl;
-				}
-			}
-		}
-	}
-	cout<<"10c+n/10d+c=n/d"<<endl;
-	for(int i=1;i<=9;i++)
-	{
-		for(int j=1;j<=9;j++)
-		{
-			if((9*i*j)%((10*j)-i)==0)
-			{
-				c = (9*i*j)/((10*j)-i);
-				if(10*c+i<10*j+c)
-				{
-					cout<<10*c+i<<" "<<10*j+c<<endl;
 				}
 			}
 		}
