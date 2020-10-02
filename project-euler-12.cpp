@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//using brute force solution
 int main()
 {
 int counter=0;
